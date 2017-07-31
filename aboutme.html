@@ -3,7 +3,7 @@
 <head>
 <style>
 .growImage {
-    position:fixed;
+    position:relative;
     width:80%;
     top:15px
 }
@@ -12,7 +12,7 @@
     top: 100px;
     width:150px;
     height:150px;
-    position: fixed;
+    position: relative;
 }    
 body {
     background-image: url("https://blog.spoonflower.com/wp-content/uploads/2015/08/6a01bb0805c7f6970d01bb0866823f970d-800wi.png");
@@ -22,21 +22,21 @@ h1 {
     border: 25px double white;
     padding: 10px;
     font-family: Sophia;
-    font-size: 60px;
+    font-size: 45px;
     color: #c16a8a;
 }
 h2 {
     background-color: #ffcccc;
-    width: 700px;
+    width: 600px;
     border: 25px double white;
     padding: 10px;
     margin: 25px;
     font-family: Summeron;
-    font-size: 25px;
+    font-size: 20px;
 }
 p1.Nickainley {
     font-family: Blenda;
-    font-size: 17px;
+    font-size: 13px;
 }
 img {
     background-color: #ffcccc;
@@ -46,7 +46,7 @@ img {
 .solidpink {
     background-color: #ffe6e6;
     border: 10px double black;
-    width: 900px;
+    width: 700px;
 }
 @font-face {
     font-family: Sophia;
@@ -76,12 +76,19 @@ img {
     font-family: Mightype;
     src: url(MightypeScript.otf);
 } 
+.fixed {
+    position: fixed;
+}        
 </style>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
     
 </head>
 <body>
+<div class="growDiv">
+      <img class="growImage" src="instagramSmall.png" alt="Instagram">
+      <img class="growImage" src="facebookSmall.png" alt="Facebook">
+</div>    
  <center>
 <br>
   <div class="solidpink">
@@ -189,10 +196,7 @@ img {
  
  </center>
    
-<div class="growDiv">
-      <img class="growImage" src="instagramSmall.png" alt="Instagram">
-      <img class="growImage" src="facebookSmall.png" alt="Facebook">
-</div>
+
 <center>
 <button onclick="document.getElementById('myImage').src='https://media.giphy.com/media/ndPRakO8Exag0/giphy.gif'">Peach Parade</button>
 
