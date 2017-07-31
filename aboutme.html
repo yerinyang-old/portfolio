@@ -6,6 +6,8 @@
     .growDiv { left: 100px; top: 100px;width:150px;height:150px;position:relative }
 </style>    
 <style>
+.icon {
+    
 body {
     background-image: url("https://blog.spoonflower.com/wp-content/uploads/2015/08/6a01bb0805c7f6970d01bb0866823f970d-800wi.png");
 }
@@ -178,24 +180,19 @@ img {
       <br>
      <br>
 </div>
-<br>
-<br>
-<br>
-    
+ 
+ </center>
+   
 <div class="growDiv">
       <img class="growImage" src="https://www.seeklogo.net/wp-content/uploads/2016/06/Instagram-logo-400x400.png" alt="Instagram">
       <img class="growImage" src="https://www.seeklogo.net/wp-content/uploads/2016/09/facebook-icon-preview-1-400x400.png" alt="Facebook">
 </div>
-    
- </center>
-    
+ 
 <script type="text/javascript">
 
 $(document).ready(function(){
 
     $('.growImage').mouseover(function(){
-      //moving the div left a bit is completely optional
-      //but should have the effect of growing the image from the middle.
       $(this).stop().animate({"width": "100%","left":"0px","top":"0px"}, 400,'swing');
     }).mouseout(function(){
       $(this).stop().animate({"width": "80%","left":"15px","top":"15px"}, 200,'swing');
