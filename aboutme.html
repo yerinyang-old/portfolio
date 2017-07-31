@@ -4,7 +4,7 @@
 <style>
 .growImage {
     position:relative;
-    width:50%;
+    width:80%;
     top:15px
 }
 .growDiv {
@@ -22,7 +22,7 @@ h1 {
     border: 25px double white;
     padding: 10px;
     font-family: Sophia;
-    font-size: 45px;
+    font-size: 50px;
     color: #c16a8a;
 }
 h2 {
@@ -90,7 +90,6 @@ img {
       <img class="growImage" src="facebookSmall.png" alt="Facebook">
 </div>    
  <center>
-<br>
   <div class="solidpink">
  <h1> PORTFOLIO </h1>
   <h2 title="Me!">♥ About ♥</h2>
@@ -211,9 +210,9 @@ img {
 $(document).ready(function(){
 
     $('.growImage').mouseover(function(){
-      $(this).stop().animate({"width": "70%","left":"0px","top":"0px"}, 400,'swing');
+      $(this).stop().animate({"width": "100%","left":"0px","top":"0px"}, 400,'swing');
     }).mouseout(function(){
-      $(this).stop().animate({"width": "50%","left":"15px","top":"15px"}, 200,'swing');
+      $(this).stop().animate({"width": "80%","left":"15px","top":"15px"}, 200,'swing');
     });;
 });
 </script>  
